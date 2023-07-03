@@ -1,0 +1,16 @@
+{
+  "name": "module2",
+  "version": "1.0.0",
+  "description": "micro front end sample module2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf .cache && rm -rf ../docs/module2 && parcel build index.html -d ../docs/module2 ./index.html --public-url ./"
+  },
+  "author": "mastar3104",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.5.1",
+    "parcel-plugin-svelte": "^4.0.8",
+    "svelte": "^3.59.1"
+  }
+}

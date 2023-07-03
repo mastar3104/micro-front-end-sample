@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>micro front end sample</title>
+</head>
+<body>
+    <div id="app"></div>
+    <h3>module 1</h3>
+    <div id="module1"></div>
+    <h3>module 2</h3>
+    <div id="module2"></div>
+    <script type="module" src="./views/index.js"></script>
+    <script type="module" src="https://mastar3104.github.io/micro-front-end-sample/module1/index.c641da5a.js"></script>
+    <script type="module" src="https://mastar3104.github.io/micro-front-end-sample/module2/views.4217af7c.js"></script>
+    <script type="text/javascript">
+        window.onload = () => {
+            window.renderMain('app');
+            window.renderModule1('module1');
+            window.renderModule2('module2');
+        };
+    </script>
+</body>
+</html>
